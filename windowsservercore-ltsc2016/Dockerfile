@@ -1,5 +1,6 @@
 # escape=`
 FROM microsoft/windowsservercore:ltsc2016
+LABEL maintainer="Ivan Pashchenko <ivan.pashchenko@jetbrains.com>""
 
 ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\temp\vs_buildtools.exe
 

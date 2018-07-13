@@ -1,5 +1,5 @@
 FROM microsoft/dotnet:2.1-sdk-bionic
-MAINTAINER Ivan Pashchenko <ivan.pashchenko@jetbrains.com>
+LABEL maintainer="Ivan Pashchenko <ivan.pashchenko@jetbrains.com>"
 
 ENV RIDER_BUILD_MONO_VERSION=5.12.0.226-0xamarin3+ubuntu1804b1
 
