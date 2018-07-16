@@ -5,8 +5,8 @@ LABEL maintainer="Ivan Pashchenko <ivan.pashchenko@jetbrains.com>"
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 
 ADD https://chocolatey.org/install.ps1 C:\dependencies\install_choco.ps1
-#ADD https://dotnetbinaries.blob.core.windows.net/dockerassets/microsoft-windows-netfx3-ltsc2016.zip C:\dependencies\microsoft-windows-netfx3-ltsc2016.zip
-COPY dependencies/microsoft-windows-netfx3-ltsc2016.zip C:\dependencies\microsoft-windows-netfx3-ltsc2016.zip
+ADD https://dotnetbinaries.blob.core.windows.net/dockerassets/microsoft-windows-netfx3-ltsc2016.zip C:\dependencies\microsoft-windows-netfx3-ltsc2016.zip
+#COPY dependencies/microsoft-windows-netfx3-ltsc2016.zip C:\dependencies\microsoft-windows-netfx3-ltsc2016.zip
 
 RUN Set-ExecutionPolicy Bypass -Scope Process -Force; `
     Set-Location "C:\\dependencies;" `
