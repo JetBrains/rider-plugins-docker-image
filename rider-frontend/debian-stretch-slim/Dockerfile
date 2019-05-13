@@ -6,3 +6,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         maven \
         openjfx \
 	&& rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        mc \
+        git \
+	&& rm -rf /var/lib/apt/lists/*
